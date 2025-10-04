@@ -17,6 +17,7 @@ public class playerInteraction_Detect : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             interactableInRange.Interact();
+            E.SetActive(false);
         }
     }
 

@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class Buttons : MonoBehaviour
 {
 
-    public void Day_1()
+    public void Starting_Room()
     {
         SceneManager.LoadScene("Starting room");
+        Time.timeScale = 1f;
     }
 
     public void Quit()
@@ -25,5 +26,6 @@ public class Buttons : MonoBehaviour
     public void BackToMenu()
     {
         SceneManager.LoadScene("Title_Screen");
+        Time.timeScale = 1f;
     }
 }

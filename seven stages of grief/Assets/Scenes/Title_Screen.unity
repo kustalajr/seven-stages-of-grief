@@ -207,7 +207,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 654171852}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: Day_1
+        m_MethodName: Starting_Room
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
