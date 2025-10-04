@@ -12,12 +12,21 @@ public class player_movement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Animator anim;
 
 
 
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
+        if(horizontal == 0f)
+        {
+            anim.SetBool("isWalkin", false);
+        }
+        else
+        {
+            anim.SetBool("isWalkin", true);
+        }
 
         if(Input.GetButtonDown("Jump") && IsGrounded())
         {
