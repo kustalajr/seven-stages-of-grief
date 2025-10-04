@@ -70,3 +70,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/seven stages of grief/Library
+/seven stages of grief/Logs
+/seven stages of grief/obj
+/seven stages of grief/UserSettings
