@@ -74,3 +74,5 @@ crashlytics-build.properties
 /seven stages of grief/Logs
 /seven stages of grief/obj
 /seven stages of grief/UserSettings
+*.physicsMaterial2D
+/seven stages of grief/Temp
