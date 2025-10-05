@@ -15,7 +15,8 @@ public class player_teleport : MonoBehaviour
         {
             if (currentTeleporter != null)
             {
-                transform.position = currentTeleporter.GetComponent<EnterToMainRoom>().GetDestination().position;
+                currentTeleporter.GetComponent<teleporters>().SwitchConfiner();
+                transform.position = currentTeleporter.GetComponent<teleporters>().GetDestination().position;
             }
 
         }

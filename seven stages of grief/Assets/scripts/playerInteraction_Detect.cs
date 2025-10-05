@@ -16,8 +16,15 @@ public class playerInteraction_Detect : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            interactableInRange.Interact();
-            E.SetActive(false);
+            if (interactableInRange != null)
+            {
+                interactableInRange.Interact();
+                E.SetActive(false);
+            }
+            else
+            {
+                print("No interactable in range");
+            }
         }
     }
 

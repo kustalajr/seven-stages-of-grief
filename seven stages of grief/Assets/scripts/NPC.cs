@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,9 +8,13 @@ using UnityEngine.UI;
 public class NPC : MonoBehaviour, IInteractable
 {
     public NPCDialogue dialogueData;
+    public NPCDialogue dialogueDataKey;
     public GameObject dialoguePanel;
     public TMP_Text dialogueText, nameText;
     public Image portraitImage;
+    public GameObject Key;
+
+    NPCDialogue currentDialogue;
 
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
@@ -33,17 +38,25 @@ public class NPC : MonoBehaviour, IInteractable
         }
         else
         {
+            currentDialogue = dialogueData;
+
             StartDialogue();
         }
     }
 
     void StartDialogue()
     {
+        if (currentDialogue == null)
+        {
+            print("no dialogue set");
+            return;
+        }
+
         isDialogueActive = true;
         dialogueIndex = 0;
 
-        nameText.SetText(dialogueData.npcName);
-        portraitImage.sprite = dialogueData.npcPortrait;
+        nameText.SetText(currentDialogue.npcName);
+        portraitImage.sprite = currentDialogue.npcPortrait;
 
         dialoguePanel.SetActive(true);
         //To make sure the MC does not move when the NPC is talking
@@ -59,10 +72,10 @@ public class NPC : MonoBehaviour, IInteractable
         {
             //Skip typing animation and show the full line
             StopAllCoroutines();
-            dialogueText.SetText(dialogueData.dialogueLines[dialogueIndex]);
+            dialogueText.SetText(currentDialogue.dialogueLines[dialogueIndex]);
             isTyping = false;
         }
-        else if(++dialogueIndex < dialogueData.dialogueLines.Length)
+        else if(++dialogueIndex < currentDialogue.dialogueLines.Length)
         {
             //If another line, type next line
             StartCoroutine(TypeLine());
@@ -79,20 +92,20 @@ public class NPC : MonoBehaviour, IInteractable
         dialogueText.SetText("");
 
         //Typing effect
-        foreach(char letter in dialogueData.dialogueLines[dialogueIndex])
+        foreach(char letter in currentDialogue.dialogueLines[dialogueIndex])
         {
             dialogueText.text += letter;
             // yield return new WaitForSeconds(dialogueData.typingSpeed);
-            yield return new WaitForSecondsRealtime(dialogueData.typingSpeed); 
+            yield return new WaitForSecondsRealtime(currentDialogue.typingSpeed); 
         }
 
         isTyping = false;
 
         //Auto Progression
-        if(dialogueData.autoProgressLines.Length >  dialogueIndex && dialogueData.autoProgressLines[dialogueIndex])
+        if(currentDialogue.autoProgressLines.Length >  dialogueIndex && currentDialogue.autoProgressLines[dialogueIndex])
         {
             // yield return new WaitForSeconds(dialogueData.autoProgressDelay);
-            yield return new WaitForSecondsRealtime(dialogueData.autoProgressDelay);
+            yield return new WaitForSecondsRealtime(currentDialogue.autoProgressDelay);
             NextLine();
         }
     }
@@ -105,5 +118,17 @@ public class NPC : MonoBehaviour, IInteractable
         dialoguePanel.SetActive(false);
         //PauseController.SetPause(false);
         Time.timeScale = 1f; //resume
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Medicine"))
+        {
+            Destroy(other.gameObject);
+            currentDialogue = dialogueDataKey;
+            StartDialogue();
+            Key.SetActive(true);
+
+        }
     }
 }
