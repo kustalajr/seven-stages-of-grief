@@ -11,10 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Starting room.unity
     guid: 5ded86d70f1bf564baaf128771f1d439
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainRoom.unity
     guid: 3492f044bdd9c8c44bad7e0389dcd6fa
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/End Game.unity
+    guid: a34cfd1cdfb1fe149bfbace0285f2a79
   m_configObjects: {}
