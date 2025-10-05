@@ -1,0 +1,62 @@
+Characters:
+-MC Ants (“Kaval Ants” coded)
+-Maali (grandma coded witch/wisewoman - the deceased)
+-Ernst von Steinherzt (the Lord of the manor - anger stage)
+
+Intro screen text - shock and disbelief
+“Ants awakes to a cold presence, which is sharper than the usual autumn chill blowing in through the cracks in the windows. The cold seems to be watching expectantly.”
+
+Letter
+Dear Ants,
+
+If you found this box then my mortal coil has run out and I am no more. Here are my personal belongings that are now yours. I wish that you get as far away as possible from this place and these people, but that you do not let your grief over my loss weigh you down. Trust in yourself - and the items you need will present themselves. Use my grimoire if you need a remedy for some ailment or a place to take notes. Do not forget to follow the steps exactly! The mortar and pestle are as useful in the kitchen as on the bedside. The lens can help you see some things clearer or bigger to bring out hidden details. Use the keys trusted to me to get around the manor with ease and without bothering anyone. Look at everything through the eyes of a small child because you never know what use your imagination can think of.
+
+Best wishes,
+
+Maali
+
+P.S. Siil has always been a helpful little gal!
+
+Item desc
+- BOX:
+    Letter - “A heartfelt last goodbye from a good friend and mentor”
+    Mortar and pestle - “Useful for grinding and mixing elixirs or spices”
+    Grimoire - “The knowledge collected by Maali during her life with pages to spare for my own notes”
+
+- 1st room (down the ladder):
+    Yarrow - “Small white flowers with a yellow undertone clustered atop a stem with feathery leaves, emanating a strong earthy scent”
+    Valerian - “Pinkish-white flowers atop a long delicate stem, with a very sweet scent”
+
+- Lords room (to the left)
+    Egg - “A humble hen’s gift, held in high regard by many”
+    Woodland Sage - “Violet-blue flowers along a strong stem and a fresh scent”
+
+Grimoire pages
+Restfulness and agitation problems - “Lightly grind some appropriate herbs or roots until it’s a coarse paste. Then add some water until drinkable, but not too diluted.                                            Ingest the elixir when fresh and in one mouthful. Do not sniff too strongly or you are risking a pain in the head.”
+                                      Plants to use: Salvia nemorosa, hemp, marsh rosemary, yarrow and its root…
+Coughing and breathing problems - “Coughs and other breathing related ailments are best cured with warm drinks and strong tinctures. Usually made by soaking all components                                      in a pot or cauldron over the fire for about one hour. If the subject experiences pain while speaking or breathing then it is best to                                         soften the mixture before ingestion with wild honey or butter.”
+                                   Plants to use: Garlic, chamomile, birch, yarrow, cetraria islandica, nettles, spruce tips, mentha piperita, thistle roots…
+Houseguest / Kodukädija / Wiedergänger - “A restless spirit who usually passed in a violent way and left their life with some unfinished business. Held in the realm of the                                             living by strong feelings of those close to them. To release them to toonela all feelings must settle.”
+Egg - “Symbol of fertility, new life and beginnings. It is believed that if knocked on a child's forehead it will fortify their health.”
+Yarrow / Herba militaris - “Very common yet extremely useful plant on numerous occasions. Be the ailments inside or on the skin. Often prepared as an ointment for wounds due                             to its strengthening capabilities. Drunk within tinctures or elixirs to give the mind more focus or help with breathing. Can be heated for teas                               if immediate relief is not a priority and other methods are already in use.”
+Valerian - “Often called the all-heal and regarded as the queen of medicinal plants. The strong sweet smell works both on men and animals. If ingested will make even the                 most feral of beasts calm down and those of lesser constitution slumber for hours. When properly prepared it can be used as a very efficient poison.”
+Woodland Sage - “Versatile plant with many uses both if dried and when freshly picked. In the kitchen it goes well with meats and if put in sausages gives them a fresh                        aroma, when cooked. The strong fresh smell alone can soothe someone who is restless, but grinding releases the inner essences to empower any calming elixir.”
+Journal page - where all dialogue is logged for reference.
+
+Dialogue
+    (on room entry)
+EvS: “(coughing)...The blasted witch died and left us with a verdammte wiedergänger... You there! Left-handed pagan-boy! Bring me my medicine, so I could remember how …            (cough spurt) … Where? The hag always had everything nearby - look around, stop gawking!”
+Ants: “As you wish … m’lord. (underbreath to himself) Hopefully I can hold out until I get the keys downstairs.”
+    (interaction starts)
+    (yarrow+valerian when administered - EvS calms down and coughing stops, demeanor changes)
+EvS: “Maybe you slaves aren't completely useless after all. Here's a pair of keys downstairs, bring me some booze.”
+Ants: “You’re very welcome, sire. (to himself) Even after all that has happened... You still found a way to help me out in dire situations.”
+    End level/scene and cue screen with anger resolution text.
+
+Anger resolution text
+Sometimes it is frustrating to see that someone or something is helpful until it is too late, but holding on to that rage will make that passing even more gruesome, prolonging only your suffering.
+
+Outro screen text - acceptance and freedom
+“After having reluctantly solved the curse your grief brought upon your oppressors in the manor, and in doing so, worked through your own feelings, you feel relieved. Unexpectedly, but with newfound confidence, starting a new life someplace else - running as far as your legs would take you. Pockets and sack full of whatever you could steal, fragments of your cherished mentors’ writings to pave a revolutionary path, you sigh in relief after pushing open the cellar door and draw your first breath of true freedom. Beyond pleased with the cunning pranks you pulled off whilst helping the nobles and the knowledge you obtained, you feel your steps on the soft dirt, making your way into the crisp mid-autumn sunrise.” 
+
+Ants was not the only slave trying to escape from serfdom, but one of the few who actually managed it. Through his cunning wit he managed to outsmart those that would own him and leave behind their hauszuchtrecht, which claimed many lives including his mentor - Maali.
